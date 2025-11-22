@@ -38,7 +38,7 @@ export default function CounterCard({
         <button
           className=" bg-[#5F6B7A] text-white py-2 rounded-md text-lg font-semibold w-98/200"
           onClick={() => {
-            onReset;
+            onReset();
           }}
         >
           Reset
