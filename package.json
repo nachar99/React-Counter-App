@@ -1,6 +1,7 @@
 {
   "name": "React-Counter-App",
   "private": true,
+  "homepage": "https://nachar99.github.io/React-Counter-App/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
