@@ -6,7 +6,7 @@ export default function CounterCard({
   onReset,
 }) {
   return (
-    <div className="bg-white rounded-lg shadow-md w-98/200 py-4 flex flex-col gap-4">
+    <div className="bg-white rounded-lg shadow-md w-98/200 py-4 flex flex-col gap-1">
       <h3 className="text-lg font-semibold text-textdark">{counter.name}</h3>
 
       <p className="text-4xl  text-primary font-bold">
@@ -14,13 +14,13 @@ export default function CounterCard({
         <span className="text-sm text-textgray font-normal">times</span>
       </p>
 
-      <p className="text-sm  rounded-lg bg-blue-100 w-3/10 self-center text-primary">
+      <p className="text-sm  rounded-lg bg-blue-100 w-3/10 self-center text-primary max-lg:w-150/200">
         Increment: {counter.increment}
       </p>
 
-      <div className="flex flex-row gap-2 flex-wrap p-2">
+      <div className="flex flex-row flex-wrap p-2 gap-2   max-lg:flex-col max-lg:place-items-center">
         <button
-          className="bg-[#D6700C] text-white py-2 rounded-md text-lg font-semibold w-98/200"
+          className="bg-[#D6700C] text-white py-2 rounded-md text-lg font-semibold w-98/200 max-lg:w-150/200 "
           onClick={() => {
             onDecrement();
           }}
@@ -28,7 +28,7 @@ export default function CounterCard({
           -{counter.increment}
         </button>
         <button
-          className="bg-[#15895D] text-white py-2 rounded-md text-lg font-semibold w-98/200"
+          className="bg-[#15895D] text-white py-2 rounded-md text-lg font-semibold w-98/200  max-lg:w-75/200 max-lg:w-150/200"
           onClick={() => {
             onIncrement();
           }}
@@ -36,7 +36,7 @@ export default function CounterCard({
           +{counter.increment}
         </button>
         <button
-          className=" bg-[#5F6B7A] text-white py-2 rounded-md text-lg font-semibold w-98/200"
+          className=" bg-[#5F6B7A] text-white py-2 rounded-md text-lg font-semibold w-98/200  max-lg:w-75/200 max-lg:w-150/200"
           onClick={() => {
             onReset();
           }}
@@ -44,7 +44,7 @@ export default function CounterCard({
           Reset
         </button>
         <button
-          className=" bg-[#D42121] text-white py-2 rounded-md text-lg font-semibold w-98/200"
+          className=" bg-[#D42121] text-white py-2 rounded-md text-lg font-semibold w-98/200  max-lg:w-75/200 max-lg:w-150/200"
           onClick={onDelete}
         >
           Delete

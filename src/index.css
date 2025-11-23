@@ -73,10 +73,12 @@ button:focus-visible {
   --color-textgray: rgb(95, 100, 107);
   --color-bordergray: rgb(186, 183, 186);
   --color-textdark: rgb(2, 2, 2);
-  --color-card-bg: rgb(249, 250, 250); /* #F9FAFA */
-  --color-orange: rgb(214, 112, 12); /* #D6700C */
-  --color-green: rgb(21, 137, 93); /* #15895D */
-  --color-red: rgb(212, 33, 33); /* #D42121 */
-  --color-gray: rgb(95, 107, 122); /* #5F6B7A */
-  --color-border-gray: rgb(179, 180, 183); /* #B3B4B7 */
+  --color-card-bg: rgb(249, 250, 250);
+  --color-orange: rgb(214, 112, 12); 
+  --color-green: rgb(21, 137, 93); 
+  --color-red: rgb(212, 33, 33); 
+  --color-gray: rgb(95, 107, 122); 
+  --color-border-gray: rgb(179, 180, 183);
+
+  
 }

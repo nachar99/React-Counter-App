@@ -4,6 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/React-Counter-App/",
   plugins: [react(), tailwindcss()],
+  base: "/React-Counter-App/",
 });

@@ -28,7 +28,7 @@ export default function CounterForm({ onCreate, onCancel }) {
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 max-sm:place-items-center">
             <label className="text-sm font-medium text-textdark">
               Counter Name:
             </label>
@@ -37,11 +37,11 @@ export default function CounterForm({ onCreate, onCancel }) {
               placeholder="Enter counter name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="rounded-md border border-border-gray bg-white px-3 py-2 text-sm outline-none focus:border-primary focus:ring-1 focus:ring-primary"
+              className="rounded-md border border-border-gray bg-white px-3 py-2 max-sm:w-10/12 text-sm outline-none focus:border-primary focus:ring-1 focus:ring-primary"
             />
           </div>
 
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 max-sm:place-items-center">
             <label className="text-sm font-medium text-textdark">
               Increment Amount:
             </label>
@@ -50,21 +50,21 @@ export default function CounterForm({ onCreate, onCancel }) {
               min="1"
               value={increment}
               onChange={(e) => setIncrement(e.target.value)}
-              className="rounded-md border border-border-gray bg-white px-3 py-2 text-sm outline-none focus:border-primary focus:ring-1 focus:ring-primary"
+              className="rounded-md border border-border-gray bg-white px-3 max-sm:w-10/12 py-2 text-sm outline-none focus:border-primary focus:ring-1 focus:ring-primary"
             />
           </div>
 
-          <div className="mt-4 flex justify-end gap-3">
+          <div className="mt-4 flex justify-end gap-3 max-sm:justify-around">
             <button
               type="submit"
-              className="rounded-md bg-primary px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700"
+              className="rounded-md bg-primary px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 max-sm:w-5/12"
             >
               Create Counter
             </button>
             <button
               type="button"
               onClick={onCancel}
-              className="rounded-md bg-gray px-4 py-2 text-sm font-semibold text-white hover:bg-slate-700"
+              className="rounded-md bg-gray px-4 py-2 text-sm font-semibold text-white hover:bg-slate-700 max-sm:w-5/12"
             >
               Cancel
             </button>

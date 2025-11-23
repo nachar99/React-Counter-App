@@ -23,7 +23,7 @@ export default function AddNewCounter({ onCreate }) {
         )}
 
         {form && (
-          <div className="bg-background py-2 flex flex-col place-items-center rounded-sm  w-6/12">
+          <div className="bg-background py-2 flex flex-col place-items-center rounded-sm  w-6/12 max-sm:w-11/12 max-sm:flex-wrap ">
             <NewCounterForm
               onCancel={() => {
                 setButton(true);

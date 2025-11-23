@@ -62,7 +62,7 @@ function App() {
         {!hasCounters && <NoCountersYet />}
       </div>
       <section className="mt-4  w-9/12 justify-self-center ">
-        <div className=" flex flex-row flex-wrap gap-1 justify-around">
+        <div className=" flex flex-row flex-wrap gap-1 justify-start">
           {counters.map((counter) => (
             <CounterCard
               key={counter.id}
